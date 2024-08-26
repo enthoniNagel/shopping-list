@@ -1,70 +1,45 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lista de Compras com Quantidades
 
-## Available Scripts
+## Objetivo
+O objetivo deste projeto é criar uma aplicação de lista de compras onde o usuário pode:
+- Adicionar itens com quantidades.
+- Marcar itens como comprados.
+- Remover itens da lista.
 
-In the project directory, you can run:
+## Funcionalidades
+- **Adicionar Itens:** Adicione novos itens à lista com nome e quantidade.
+- **Marcar Como Comprado:** Marque itens como comprados ou não.
+- **Remover Itens:** Remova itens da lista.
 
-### `npm start`
+## Componentes Principais
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `ShoppingList`
+Componente de classe que gerencia a lista de compras.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Estado (`state`)
+- `items` (Array): Lista de itens, onde cada item é um objeto com:
+  - `name` (String): Nome do item.
+  - `quantity` (Number): Quantidade do item.
+  - `purchased` (Boolean): Flag que indica se o item foi comprado.
+- `newItem` (String): Valor do novo item a ser adicionado.
+- `newQuantity` (Number): Quantidade do novo item a ser adicionado.
 
-### `npm test`
+#### Métodos
+- **`addItem`**
+  - Adiciona um novo item à lista.
+- **`handleItemChange`**
+  - Atualiza o valor do novo item.
+- **`handleQuantityChange`**
+  - Atualiza a quantidade do novo item.
+- **`markAsPurchased`**
+  - Alterna o status de compra de um item.
+- **`removeItem`**
+  - Remove um item da lista.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Instruções para Executar o Projeto
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone o Repositório**
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   cd nome-do-repositorio
